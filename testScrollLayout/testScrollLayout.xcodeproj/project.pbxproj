@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A821C397206B7EF400843A03 /* LYDScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A821C396206B7EF400843A03 /* LYDScrollTool.m */; };
+		A821C39B206B800600843A03 /* LYDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A821C39A206B800600843A03 /* LYDTool.m */; };
 		E03442AE1B4BA0EA0091CEA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E03442AD1B4BA0EA0091CEA1 /* main.m */; };
 		E03442B11B4BA0EA0091CEA1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E03442B01B4BA0EA0091CEA1 /* AppDelegate.m */; };
 		E03442B41B4BA0EA0091CEA1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E03442B31B4BA0EA0091CEA1 /* ViewController.m */; };
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A821C395206B7EF400843A03 /* LYDScrollTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDScrollTool.h; sourceTree = "<group>"; };
+		A821C396206B7EF400843A03 /* LYDScrollTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDScrollTool.m; sourceTree = "<group>"; };
+		A821C399206B800600843A03 /* LYDTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYDTool.h; sourceTree = "<group>"; };
+		A821C39A206B800600843A03 /* LYDTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYDTool.m; sourceTree = "<group>"; };
 		E03442A81B4BA0EA0091CEA1 /* testScrollLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testScrollLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03442AC1B4BA0EA0091CEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E03442AD1B4BA0EA0091CEA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,9 +72,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A821C394206B7EDE00843A03 /* code */ = {
+			isa = PBXGroup;
+			children = (
+				A821C395206B7EF400843A03 /* LYDScrollTool.h */,
+				A821C396206B7EF400843A03 /* LYDScrollTool.m */,
+			);
+			name = code;
+			sourceTree = "<group>";
+		};
+		A821C398206B7FF700843A03 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A821C399206B800600843A03 /* LYDTool.h */,
+				A821C39A206B800600843A03 /* LYDTool.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		E034429F1B4BA0EA0091CEA1 = {
 			isa = PBXGroup;
 			children = (
+				A821C398206B7FF700843A03 /* src */,
 				E03442AA1B4BA0EA0091CEA1 /* testScrollLayout */,
 				E03442C41B4BA0EA0091CEA1 /* testScrollLayoutTests */,
 				E03442A91B4BA0EA0091CEA1 /* Products */,
@@ -87,6 +112,7 @@
 		E03442AA1B4BA0EA0091CEA1 /* testScrollLayout */ = {
 			isa = PBXGroup;
 			children = (
+				A821C394206B7EDE00843A03 /* code */,
 				E03442AF1B4BA0EA0091CEA1 /* AppDelegate.h */,
 				E03442B01B4BA0EA0091CEA1 /* AppDelegate.m */,
 				E03442B21B4BA0EA0091CEA1 /* ViewController.h */,
@@ -229,10 +255,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A821C397206B7EF400843A03 /* LYDScrollTool.m in Sources */,
 				E03442B41B4BA0EA0091CEA1 /* ViewController.m in Sources */,
 				E03442D31B4BA1250091CEA1 /* MyScrollView.m in Sources */,
 				E03442B11B4BA0EA0091CEA1 /* AppDelegate.m in Sources */,
 				E03442D61B4BA1520091CEA1 /* ContainView.m in Sources */,
+				A821C39B206B800600843A03 /* LYDTool.m in Sources */,
 				E03442AE1B4BA0EA0091CEA1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +456,7 @@
 				E03442CD1B4BA0EA0091CEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E03442CE1B4BA0EA0091CEA1 /* Build configuration list for PBXNativeTarget "testScrollLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +465,7 @@
 				E03442D01B4BA0EA0091CEA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
